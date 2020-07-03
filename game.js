@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const jTetromino = [
 		[0, width + 1, width * 2 + 1, 1],
-		[width, width + 1, width + 2, width * 2],
-		[1, width + 1, width * 2 + 1, width * 2 + 2],
 		[2, width, width + 1, width + 2],
+		[1, width + 1, width * 2 + 1, width * 2 + 2],
+		[width, width + 1, width + 2, width * 2],
 	];
 
 	const zTetromino = [
