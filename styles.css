@@ -1,3 +1,14 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
 .grid {
 	width: 200px;
 	height: 400px;
@@ -9,8 +20,68 @@
 .grid div {
 	height: 20px;
 	width: 20px;
+	/* border: 1px solid rgba(30, 143, 255, 0.164); */
+}
+
+.taken {
+	border: none;
 }
 
 .tetromino {
 	background-color: blue;
+	border: 1px solid rgba(198, 227, 255, 0.103);
+}
+
+.side-panel {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+.mini-grid {
+	width: 80px;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: yellow;
+}
+
+.mini-grid div {
+	height: 20px;
+	width: 20px;
+}
+
+.instructions {
+	line-height: 1.5;
+	font-size: 1em;
+}
+
+.button-div {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+}
+
+button {
+	margin: 10% auto;
+	display: flex;
+	justify-self: center;
+
+	border: 1px solid dodgerblue;
+	background-color: transparent;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+button:hover {
+	cursor: pointer;
+	animation: linear 500ms bg-color forwards;
+}
+
+@keyframes bg-color {
+	100% {
+		background-color: dodgerblue;
+		color: white;
+		box-shadow: 1px 1px 2px gray;
+	}
 }
