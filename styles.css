@@ -8,6 +8,7 @@ html,
 body {
 	font-family: 'Rubik', sans-serif;
 	background-color: rgb(211, 211, 211);
+	overflow: hidden;
 }
 
 .container {
