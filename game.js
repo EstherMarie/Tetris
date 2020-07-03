@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	document.addEventListener('keyup', control);
+	document.addEventListener('keydown', control); // alterado de keyup para keydown
 
 	function moveDown() {
 		undraw();
