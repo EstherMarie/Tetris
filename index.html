@@ -5,11 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="game.js" charset="utf-8"></script>
 		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/132962a08f.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Tetris Game</title>
 	</head>
 	<body>
-		<h3>Score:<span id="score">0</span></h3>
-
 		<div class="container">
 			<div class="grid">
 				<!-- 200 divs!!!!!! -->
@@ -246,16 +252,26 @@
 					<div></div>
 					<div></div>
 				</div>
+				<div class="details">
+					<h3 class="h3-score">Score:<span id="score">0</span></h3>
 
-				<div class="instructions">
-					<h4>Instructions:</h4>
-					<p>Press ArrowUp to rotate</p>
-					<p>Press ArrowLeft to go Left</p>
-					<p>Press ArrowRight to go Right</p>
-				</div>
+					<div class="instructions">
+						<h4>Instructions:</h4>
+						<p>Press <i class="far fa-caret-square-up"></i> to rotate</p>
+						<p>
+							Press <i class="far fa-caret-square-left"></i> to go left
+						</p>
+						<p>
+							Press <i class="far fa-caret-square-right"></i> to go right
+						</p>
+						<p>
+							Press <i class="far fa-caret-square-down"></i> to go down
+						</p>
+					</div>
 
-				<div class="button-div">
-					<button id="start-button">Start</button>
+					<div class="button-div">
+						<button id="start-button">Start</button>
+					</div>
 				</div>
 			</div>
 		</div>

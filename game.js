@@ -295,8 +295,12 @@ document.addEventListener('DOMContentLoaded', () => {
 				squares[currentPosition + index].classList.contains('taken')
 			)
 		) {
-			scoreDisplay.innerHTML = 'Game Over';
+			scoreDisplay.innerHTML = ' Game Over';
 			clearInterval(timerId);
+			startBtn.innerHTML = `Restart`;
+			startBtn.addEventListener('click', () => {
+				window.location.reload(true);
+			});
 		}
 	}
 });
